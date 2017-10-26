@@ -73,3 +73,208 @@
     opacity: 0.7;
     display: table;
 }
+
+
+/*半圆环*/
+.halfWheel-background{
+    width: 20rem;
+    height: 20rem;
+    z-index: 10;
+    border: solid;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    /*right: 0;*/
+    /*bottom: 0;*/
+    left: 0;
+}
+.halfWheel-background li{
+    list-style: none;
+    width: 10rem;
+    height: 10rem;
+    z-index: 15;
+    border: none;
+    position: absolute;
+    overflow: hidden;
+    transition: all .3s ease;
+    transform-origin: 100% 100%;
+    -webkit-transform: rotate(0deg) skew(60deg);
+    -ms-transform: rotate(0deg) skew(60deg);
+    -moz-transform: rotate(0deg) skew(60deg);
+    transform: rotate(0deg) skew(60deg);
+}
+.halfWheel-background li a{
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    z-index:17;
+    background-color: #8a8f99;
+    /*background: radial-gradient(transparent 35%, #8a8f99 35%);*/
+    transition: all .3s ease;
+    /*transform: skew(-60deg) rotate(-90deg) scale(1);*/
+    transform: skew(-60deg) rotate(-75deg) scale(1);
+    border-radius: 50%;
+    position: absolute;
+    left: 1rem;
+    /*top: 0.5rem;*/
+    padding-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2;
+    color: white;
+    cursor: pointer;
+}
+.halfWheel-background li:nth-child(odd) a{
+    background-color: #a11313;
+    background-color: hsla(0, 88%, 63%, 1);
+}
+.halfWheel-background li:nth-child(even) a{
+    background-color: #a61414;
+    background-color: hsla(0, 88%, 65%, 1);
+}
+.halfWheel-background li a:active,
+.halfWheel-background li a:hover,
+.halfWheel-background li a:focus{
+    background-color: #b31515;
+    background-color: hsla(0, 88%, 70%, 1);
+    /*background: radial-gradient(transparent 35%, #8a8f99 35%);*/
+    color: white;
+}
+.halfWheel-background li:first-child{
+    -webkit-transform: rotate(0deg) skew(60deg);
+    -ms-transform: rotate(0deg) skew(60deg);
+    -moz-transform: rotate(0deg) skew(60deg);
+    transform: rotate(0deg) skew(60deg);
+}
+.halfWheel-background li:nth-child(2){
+    -webkit-transform: rotate(30deg) skew(60deg);
+    -ms-transform: rotate(30deg) skew(60deg);
+    -moz-transform: rotate(30deg) skew(60deg);
+    transform: rotate(30deg) skew(60deg);
+}
+.halfWheel-background li:nth-child(3){
+    -webkit-transform: rotate(60deg) skew(60deg);
+    -ms-transform: rotate(60deg) skew(60deg);
+    -moz-transform: rotate(60deg) skew(60deg);
+    transform: rotate(60deg) skew(60deg);
+}
+.halfWheel-background li:nth-child(4){
+    -webkit-transform: rotate(90deg) skew(60deg);
+    -ms-transform: rotate(90deg) skew(60deg);
+    -moz-transform: rotate(90deg) skew(60deg);
+    transform: rotate(90deg) skew(60deg);
+}
+.halfWheel-background li:nth-child(5){
+    -webkit-transform: rotate(120deg) skew(60deg);
+    -ms-transform: rotate(120deg) skew(60deg);
+    -moz-transform: rotate(120deg) skew(60deg);
+    transform: rotate(120deg) skew(60deg);
+}
+.halfWheel-background li:nth-child(6){
+    -webkit-transform: rotate(150deg) skew(60deg);
+    -ms-transform: rotate(150deg) skew(60deg);
+    -moz-transform: rotate(150deg) skew(60deg);
+    transform: rotate(150deg) skew(60deg);
+}
+
+/*圆环*/
+.Wheel-background{
+    width: 20rem;
+    height: 20rem;
+    z-index: 10;
+    border: solid;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*bottom: 0;*/
+    /*left: 0;*/
+}
+.Wheel-background li{
+    list-style: none;
+    width: 10rem;
+    height: 10rem;
+    z-index: 15;
+    border: none;
+    position: absolute;
+    overflow: hidden;
+    transition: all .3s ease;
+    transform-origin: 100% 100%;
+    -webkit-transform: rotate(0deg) skew(30deg);
+    -ms-transform: rotate(0deg) skew(30deg);
+    -moz-transform: rotate(0deg) skew(30deg);
+    transform: rotate(0deg) skew(30deg);
+}
+.Wheel-background li a{
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    z-index:17;
+    background-color: #8a8f99;
+    /*background: radial-gradient(transparent 35%, #8a8f99 35%);*/
+    transition: all .3s ease;
+    /*transform: skew(-60deg) rotate(-90deg) scale(1);*/
+    transform: skew(-30deg) rotate(-60deg) scale(1);
+    border-radius: 50%;
+    position: absolute;
+    left: 1rem;
+    top: 0.4rem;
+    padding-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2;
+    color: white;
+    cursor: pointer;
+}
+.Wheel-background li:nth-child(odd) a{
+    background-color: #a11313;
+    background-color: hsla(0, 88%, 63%, 1);
+}
+.Wheel-background li:nth-child(even) a{
+    background-color: #a61414;
+    background-color: hsla(0, 88%, 65%, 1);
+}
+.Wheel-background li a:active,
+.Wheel-background li a:hover,
+.Wheel-background li a:focus{
+    background-color: #b31515;
+    background-color: hsla(0, 88%, 70%, 1);
+    /*background: radial-gradient(transparent 35%, #8a8f99 35%);*/
+    color: white;
+}
+.Wheel-background-background li:first-child{
+    -webkit-transform: rotate(0deg) skew(30deg);
+    -ms-transform: rotate(0deg) skew(30deg);
+    -moz-transform: rotate(0deg) skew(30deg);
+    transform: rotate(0deg) skew(30deg);
+}
+.Wheel-background li:nth-child(2){
+    -webkit-transform: rotate(60deg) skew(30deg);
+    -ms-transform: rotate(60deg) skew(30deg);
+    -moz-transform: rotate(60deg) skew(30deg);
+    transform: rotate(60deg) skew(30deg);
+}
+.Wheel-background li:nth-child(3){
+    -webkit-transform: rotate(120deg) skew(30deg);
+    -ms-transform: rotate(120deg) skew(30deg);
+    -moz-transform: rotate(120deg) skew(30deg);
+    transform: rotate(120deg) skew(30deg);
+}
+.Wheel-background li:nth-child(4){
+    -webkit-transform: rotate(180deg) skew(30deg);
+    -ms-transform: rotate(180deg) skew(30deg);
+    -moz-transform: rotate(180deg) skew(30deg);
+    transform: rotate(180deg) skew(30deg);
+}
+.Wheel-background li:nth-child(5){
+    -webkit-transform: rotate(240deg) skew(30deg);
+    -ms-transform: rotate(240deg) skew(30deg);
+    -moz-transform: rotate(240deg) skew(30deg);
+    transform: rotate(240deg) skew(30deg);
+}
+.Wheel-background li:nth-child(6){
+    -webkit-transform: rotate(300deg) skew(30deg);
+    -ms-transform: rotate(300deg) skew(30deg);
+    -moz-transform: rotate(300deg) skew(30deg);
+    transform: rotate(300deg) skew(30deg);
+}
