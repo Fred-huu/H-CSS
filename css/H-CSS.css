@@ -1,0 +1,75 @@
+/*
+ * @Author: Fred.Hu
+ * @Date: 2017-10-26 09:38:42
+ * @Last Modified by: Fred.Hu
+ * @Last Modified time: 2017-10-26 10:12:07
+ */
+
+
+/*警告弹框*/
+.notice {
+    height: auto;
+    width: auto;
+    max-width: 60%;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 99999;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+}
+.notice>span {
+    line-height: normal;
+    color: white;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.notice>i {
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+.notice-error {
+    background-color: #ff5e54;
+}
+.notice-success {
+    background-color: #56cc22;
+}
+.notice-warning {
+    background-color: #f86f14;
+}
+.notice-secondary {
+    background-color: #0099ff;
+}
+
+.notice-Android {
+    height: auto;
+    width: auto;
+    max-width: 70%;
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99999;
+    border-radius: 5px;
+    padding: 10px;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+}
+.notice-Android>div {
+    color: white;
+    width: auto;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    display: table;
+}
