@@ -12,7 +12,7 @@ function noticeError(WaringMes) {
 
     $('body').append('' +
         '<div id="notice" class="notice notice-error" hidden>' +
-        '<span>' + WaringMes + '</span>' +
+        '<div>' + WaringMes + '</div>' +
         '<i onclick="$(this).closest($(\'#notice\')).fadeOut(\'slow\');" class="fa fa-times" aria-hidden="true"></i>' +
         '</div>');
     $("#notice").fadeIn();
@@ -28,7 +28,7 @@ function noticeSuccess(WaringMes) {
 
     $('body').append('' +
         '<div id="notice" class="notice notice-success" hidden>' +
-        '<span>' + WaringMes + '</span>' +
+        '<div>' + WaringMes + '</div>' +
         '<i onclick="$(this).closest($(\'#notice\')).fadeOut(\'slow\');" class="fa fa-times" aria-hidden="true"></i>' +
         '</div>');
     $("#notice").fadeIn();
@@ -44,7 +44,7 @@ function noticeWarning(WaringMes) {
 
     $('body').append('' +
         '<div id="notice" class="notice notice-warning" hidden>' +
-        '<span>' + WaringMes + '</span>' +
+        '<div>' + WaringMes + '</div>' +
         '<i onclick="$(this).closest($(\'#notice\')).fadeOut(\'slow\');" class="fa fa-times" aria-hidden="true"></i>' +
         '</div>');
     $("#notice").fadeIn();
@@ -60,7 +60,7 @@ function noticeSecondary(WaringMes) {
 
     $('body').append('' +
         '<div id="notice" class="notice notice-secondary" hidden>' +
-        '<span>' + WaringMes + '</span>' +
+        '<div>' + WaringMes + '</div>' +
         '<i onclick="$(this).closest($(\'#notice\')).fadeOut(\'slow\');" class="fa fa-times" aria-hidden="true"></i>' +
         '</div>');
     $("#notice").fadeIn();

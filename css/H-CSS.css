@@ -18,8 +18,11 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 10px;
+    white-space: normal;
+    word-break: break-all;
+    overflow: hidden;
 }
-.notice>span {
+.notice>div {
     line-height: normal;
     color: white;
     margin-right: 15px;
