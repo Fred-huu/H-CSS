@@ -80,7 +80,7 @@ function noticeAndroid(WaringMes) {
         '</div>');
     $("#notice").fadeIn();
 
-    /*setTimeout(function() {
+    setTimeout(function() {
         $("#notice").fadeOut('slow');
-    }, 5000);*/
+    }, 5000);
 }
