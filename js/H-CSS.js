@@ -2,7 +2,7 @@
  * @Author: Fred.Hu
  * @Date: 2017-10-26 09:30:22
  * @Last Modified by: Fred.Hu
- * @Last Modified time: 2017-10-26 10:09:26
+ * @Last Modified time: 2017-11-14
  */
 
 // 提示弹窗
@@ -84,3 +84,25 @@ function noticeAndroid(WaringMes) {
         $("#notice").fadeOut('slow');
     }, 5000);
 }
+
+//modern风格输入框
+$(function () {
+    if ($('.modern-text').val() !== "") {
+        $(this).parent().find($('.placeholder')).css('display', 'none');
+    }
+
+    $('.modern-text').on("blur", function(){
+        if ($('.modern-text').val() !== "") {
+            $(this).parent().find($('.placeholder')).css('display','none');
+        } else {
+            $(this).parent().find($('.placeholder')).css('display','block');
+        }
+    });
+    $('.modern-text').on("focus", function(){
+        if ($('.modern-text').val() !== "") {
+            $(this).parent().find($('.placeholder')).css('display', 'none');
+        } else {
+            $(this).parent().find($('.placeholder')).css('display', 'block');
+        }
+    });
+})
