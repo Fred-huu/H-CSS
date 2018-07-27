@@ -5,7 +5,8 @@
     <title>H-CSS input</title>
     <meta name="description" content="H-CSS">
     <meta name="keywords" content="form">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
@@ -13,8 +14,12 @@
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/H-CSS.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/input.css">
 </head>
 <body>
+<div>
+    <div>modern风格输入框</div>
     <div class="input-control modern text" data-role="input">
         <input type="text" class="modern-text">
         <span class="label">...信息</span>
@@ -43,30 +48,33 @@
         <span class="placeholder">请输入...</span>
     </div>
 
-    <div class="input-control modern info text" data-role="input">
+    <div class="input-control modern input-inline info text" data-role="input">
         <input type="text">
         <span class="label">...信息</span>
         <span class="informer">(输入格式说明)</span>
         <span class="placeholder">请输入...</span>
     </div>
 
-    <div class="input-control modern text" data-role="input">
+    <div class="input-control modern input-inline text" data-role="input">
         <input type="text" disabled>
         <span class="label">...信息</span>
         <span class="informer">(输入格式说明)</span>
         <span class="placeholder">请输入...disabled</span>
     </div>
+</div>
 
+<div class="footer">
     <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+</div>
 
-    <!--[if (gte IE 9)|!(IE)]><!-->
-        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<!--<![endif]-->
 
-    <!--[if lte IE 8 ]>
-        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <![endif]-->
+<!--[if lte IE 8 ]>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<![endif]-->
 
-    <script src="js/H-CSS.js"></script>
+<script src="js/H-CSS.js"></script>
 </body>
 </html>

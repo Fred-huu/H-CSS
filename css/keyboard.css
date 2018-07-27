@@ -1,0 +1,40 @@
+/*
+ * @Author: Fred.Hu
+ * @Date: 2018-07-27
+ * @Last Modified by: Fred.Hu
+ * @Last Modified time: 2018-07-27
+ */
+.keyboardInput[readonly] {
+    background-color: white !important;
+}
+
+#Jkeyboard {
+    width: 100%;
+    font-size: 18px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#Jkeyboard li {
+    width: 33.33333%;
+    height: 50px;
+    background: #fff;
+    line-height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-bottom: none;
+    float: left;
+}
+
+#Jkeyboard li:last-child {
+    background-color: #2D89EF;
+    color: white;
+    font-size: 16px;
+}

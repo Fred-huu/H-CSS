@@ -1,0 +1,88 @@
+/*
+ * @Author: Fred.Hu
+ * @Date: 2018-02-28
+ * @Last Modified by: Fred.Hu
+ * @Last Modified time: 2018-02-28
+ */
+
+.h-nav {
+    list-style: none;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.h-nav > li {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-bottom: 3px;
+    position: relative;
+    display: block;
+}
+
+.h-nav > li > a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-size: 16px;
+}
+
+.h-nav > li:hover {
+    background-color: #d5d5d5;
+}
+
+.nav-active {
+    background-color: #1ba1e2 !important;
+}
+
+.nav-active > a {
+    color: white !important;
+}
+
+.nav-horizontal > li {
+    float: left;
+    margin-bottom: 0;
+}
+
+.nav-horizontal > li + li {
+    margin-left: 5px;
+    margin-top: 0;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs > li {
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+}
+
+.nav-tabs > li > a {
+    color: #1ba1e2;
+}
+
+.nav-tabs-active {
+    border: 1px solid #ddd !important;
+    border-bottom-color: #fff !important;
+    margin-bottom: -1px;
+}
+
+.nav-tabs-active > a {
+    color: #1d1d1d;
+}
+
+.nav-justify {
+    width: 100%;
+}
+
+.nav-justify > li {
+    display: table-cell;
+    float: none;
+    text-align: center;
+}

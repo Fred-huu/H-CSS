@@ -1,0 +1,33 @@
+/*
+ * @Author: Fred.Hu
+ * @Date: 2018-02-28
+ * @Last Modified by: Fred.Hu
+ * @Last Modified time: 2018-02-28
+ */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.doc-example {
+    width: 80%;
+    height: auto;
+    margin: auto auto 15px;
+    border: solid 1px #8a8f99;
+    padding: 1rem;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: #d3d3d3;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.footer > p > a {
+    font-weight: normal;
+    color: #d3d3d3;
+}
