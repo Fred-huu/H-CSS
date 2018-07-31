@@ -1,0 +1,48 @@
+/*
+ * @Author: Fred.Hu
+ * @Date: 2018-07-31
+ * @Last Modified by: Fred.Hu
+ * @Last Modified time: 2018-07-31
+ */
+
+/*IE*/
+HTML {
+    scrollbar-base-color: #39c6e2;/*设置滚动条主要构成部分的颜色*/
+    scrollbar-3dlight-color: #39c6e2;/*设置滚动框的和滚动条箭头左上边缘的颜色*/
+    scrollbar-highlight-color: #39c6e2;/*设置滚动框的和滚动条箭头左上边缘的颜色*/
+    scrollbar-track-color: #EBEBEB;/*设置滚动条轨迹组成部分的颜色*/
+    scrollbar-arrow-color: black;/*设置滚动条箭头的颜色*/
+    scrollbar-shadow-color: #39c6e2;/*设置滚动框的和滚动条箭头右下边缘的颜色*/
+    scrollbar-dark-shadow-color: #39c6e2;/*设置滚动条槽的颜色*/
+    scrollbar-face-color: #39c6e2;/*设置滚动框和滚动条箭头的颜色*/
+}
+
+/*Chrome*/
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {/* 滑块颜色 */
+    height: 50px;
+    background-color: #666;
+    -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {/* 滚动条的滑轨背景颜色 */
+    background-color: #b46868;
+}
+
+::-webkit-scrollbar-button {/* 滑轨两头的监听按钮颜色 */
+    background-color: #7c2929;
+}
+
+::-webkit-scrollbar-corner {/* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+    background-color: black;
+}
+
+

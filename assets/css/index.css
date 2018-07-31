@@ -2,7 +2,7 @@
  * @Author: Fred.Hu
  * @Date: 2018-02-28
  * @Last Modified by: Fred.Hu
- * @Last Modified time: 2018-02-28
+ * @Last Modified time: 2018-07-31
  */
 
 html,
@@ -11,12 +11,21 @@ body {
     height: 100%;
 }
 
+/*nav.html*/
 .doc-example {
     width: 80%;
     height: auto;
     margin: auto auto 15px;
     border: solid 1px #8a8f99;
     padding: 1rem;
+}
+
+/*scrollBar.html*/
+.container {
+    width: 400px;
+    height: 300px;
+    background-color: #DCDCDC;
+    overflow: scroll; /* 让它显示滚动条 */
 }
 
 .footer {

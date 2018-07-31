@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>H-CSS</title>
+    <title>H-CSS Notice</title>
     <meta name="description" content="H-CSS">
     <meta name="keywords" content="form">
     <meta name="viewport"
@@ -31,19 +31,22 @@
 
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/H-CSS.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/H-CSS.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/notice.css">
 </head>
 <body>
 <div class="header"></div>
 
 <div class="section">
-    <a href="css/nav.html">导航栏</a>
-    <a href="css/input.html">表单</a>
-    <a href="javascript/notice.html">通知提示框</a>
-    <a href="css/wheelMenu.html">圆环菜单</a>
-    <a href="javascript/keyboard.html">手机键盘</a>
-    <a href="css/scrollBar.html">滚动条</a>
+    <button onclick="noticeError('这是个错误弹框！(⊙?⊙)')">错误弹框</button>
+    <button onclick="noticeSuccess('这是个成功弹框！(≧ω≦)')">成功弹框</button>
+    <button onclick="noticeWarning('这是个警告弹框！囧rz')">警告弹框</button>
+    <button onclick="noticeSecondary('这是个次级弹框！(ΘωΘ)')">次级弹框</button>
+
+    <br>
+
+    <button onclick="noticeAndroid('这是个仿安卓弹框！(ΘωΘ)')">仿安卓弹框</button>
 </div>
 
 <div class="footer">
@@ -58,6 +61,7 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <![endif]-->
 
-<script src="assets/js/H-CSS.js"></script>
+<script src="../assets/js/H-CSS.js"></script>
+<script src="../assets/js/notice.js"></script>
 </body>
 </html>

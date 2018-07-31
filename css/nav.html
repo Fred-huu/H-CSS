@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>H-CSS keyboard</title>
+    <title>H-CSS Nav</title>
     <meta name="description" content="H-CSS">
     <meta name="keywords" content="form">
     <meta name="viewport"
@@ -31,18 +31,53 @@
 
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/H-CSS.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/keyboard.css">
+    <link rel="stylesheet" href="../assets/css/H-CSS.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
 </head>
 <body>
 <div class="header"></div>
 
 <div class="section">
-    <input phone readonly="readonly" class="keyboardInput" type="text" name="" placeholder="11位手机号">
-    <input money readonly="readonly" class="keyboardInput" type="text" name="" placeholder="金额">
-    <input bank readonly="readonly" class="keyboardInput" type="text" name="" placeholder="银行卡号">
-    <input id readonly="readonly" class="keyboardInput" type="text" name="" placeholder="身份证号">
+    <div class="doc-example">
+        <ul class="h-nav">
+            <li class="nav-active"><a href="#">首页</a></li>
+            <li><a href="#">标题1</a></li>
+            <li><a href="#">标题2</a></li>
+        </ul>
+    </div>
+
+    <div class="doc-example">
+        <ul class="h-nav nav-horizontal">
+            <li class="nav-active"><a href="#">首页</a></li>
+            <li><a href="#">标题1</a></li>
+            <li><a href="#">标题2</a></li>
+        </ul>
+    </div>
+
+    <div class="doc-example">
+        <ul class="h-nav nav-horizontal nav-tabs">
+            <li class="nav-tabs-active"><a href="#">首页</a></li>
+            <li><a href="#">标题1</a></li>
+            <li><a href="#">标题2</a></li>
+        </ul>
+    </div>
+
+    <div class="doc-example">
+        <ul class="h-nav nav-horizontal nav-justify">
+            <li class="nav-active"><a href="#">首页</a></li>
+            <li><a href="#">标题1</a></li>
+            <li><a href="#">标题2</a></li>
+        </ul>
+
+        <br>
+
+        <ul class="h-nav nav-horizontal nav-tabs nav-justify">
+            <li class="nav-tabs-active"><a href="#">首页</a></li>
+            <li><a href="#">标题1</a></li>
+            <li><a href="#">标题2</a></li>
+        </ul>
+    </div>
 </div>
 
 <div class="footer">
@@ -57,17 +92,6 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <![endif]-->
 
-<script src="js/H-CSS.js"></script>
-<script src="js/keyboard.js"></script>
-
-<script>
-    var bottom = $('html').height();
-    $('body').children(':not(script)').each(function () {
-        bottom -= $(this).height();
-    });
-    new keyboard({
-        'bottom': bottom
-    });
-</script>
+<script src="../assets/js/H-CSS.js"></script>
 </body>
 </html>

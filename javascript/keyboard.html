@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>H-CSS wheelMenu</title>
+    <title>H-CSS keyboard</title>
     <meta name="description" content="H-CSS">
     <meta name="keywords" content="form">
     <meta name="viewport"
@@ -31,65 +31,18 @@
 
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/H-CSS.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/wheelMenu.css">
+    <link rel="stylesheet" href="../assets/css/H-CSS.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/keyboard.css">
 </head>
 <body>
 <div class="header"></div>
 
 <div class="section">
-    <!--半圆菜单-->
-    <div class="halfWheel-background">
-        <ul>
-            <li>
-                <a>1</a>
-            </li>
-            <li>
-                <a>2</a>
-            </li>
-            <li>
-                <a>3</a>
-            </li>
-            <li>
-                <a>4</a>
-            </li>
-            <li>
-                <a>5</a>
-            </li>
-            <li>
-                <a>6</a>
-            </li>
-        </ul>
-    </div>
-
-    <!--圆环菜单-->
-    <div class="Wheel-background">
-        <ul>
-            <li>
-                <a>1</a>
-            </li>
-            <li>
-                <a>2</a>
-            </li>
-            <li>
-                <a>3</a>
-            </li>
-            <li>
-                <a>4</a>
-            </li>
-            <li>
-                <a>5</a>
-            </li>
-            <li>
-                <a>6</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="Left-Wheel-bg">
-
-    </div>
+    <input phone readonly="readonly" class="keyboardInput" type="text" name="" placeholder="11位手机号">
+    <input money readonly="readonly" class="keyboardInput" type="text" name="" placeholder="金额">
+    <input bank readonly="readonly" class="keyboardInput" type="text" name="" placeholder="银行卡号">
+    <input id readonly="readonly" class="keyboardInput" type="text" name="" placeholder="身份证号">
 </div>
 
 <div class="footer">
@@ -104,6 +57,17 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <![endif]-->
 
-<script src="js/H-CSS.js"></script>
+<script src="../assets/js/H-CSS.js"></script>
+<script src="../assets/js/keyboard.js"></script>
+
+<script>
+    var bottom = $('html').height();
+    $('body').children(':not(script)').each(function () {
+        bottom -= $(this).height();
+    });
+    new keyboard({
+        'bottom': bottom
+    });
+</script>
 </body>
 </html>

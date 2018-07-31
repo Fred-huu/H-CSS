@@ -2,7 +2,7 @@
  * @Author: Fred.Hu
  * @Date: 2018-07-27
  * @Last Modified by: Fred.Hu
- * @Last Modified time: 2018-07-27
+ * @Last Modified time: 2018-07-31
  */
 
 !(function () {
