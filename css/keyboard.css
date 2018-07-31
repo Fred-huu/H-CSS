@@ -2,7 +2,7 @@
  * @Author: Fred.Hu
  * @Date: 2018-07-27
  * @Last Modified by: Fred.Hu
- * @Last Modified time: 2018-07-27
+ * @Last Modified time: 2018-07-30
  */
 .keyboardInput[readonly] {
     background-color: white !important;
@@ -13,7 +13,7 @@
     font-size: 18px;
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: -200px;
     display: none;
     margin: 0;
     padding: 0;
@@ -33,8 +33,23 @@
     float: left;
 }
 
+#Jkeyboard li:active,
+#Jkeyboard li:focus {
+    background-color: #e4e4e4;
+}
+
+#Jkeyboard li.diClick:active,
+#Jkeyboard li.diClick:focus {
+    background-color: #fff;
+}
+
 #Jkeyboard li:last-child {
     background-color: #2D89EF;
     color: white;
     font-size: 16px;
+}
+
+#Jkeyboard li:last-child:active,
+#Jkeyboard li:last-child:focus {
+    background-color: #3bb0ef;
 }
